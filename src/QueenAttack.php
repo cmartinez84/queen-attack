@@ -3,10 +3,11 @@
   {
     function Attack($playerX, $playerY, $queenX, $queenY)
     {
-      if($playerX = $queenX){
+      if($playerX == $queenX){
         return true;
-      }
-      else {
+      } elseif ($playerY == $queenY){
+        return true;
+      } else {
         return false;
       }
     }
