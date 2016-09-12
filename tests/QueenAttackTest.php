@@ -26,5 +26,16 @@
 
         $this->assertEquals(true, $result);
       }
+      function test_Attack_diagnol(){
+        $test_QueenAttack = new QueenAttack;
+        $playerX = "2";
+        $playerY = "2";
+        $queenX = "4";
+        $queenY= "4";
+
+        $result = $test_QueenAttack->Attack($playerX, $playerY, $queenX, $queenY);
+
+        $this->assertEquals(true, $result);
+      }
     }
   ?>

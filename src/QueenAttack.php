@@ -5,9 +5,14 @@
     {
       if($playerX == $queenX){
         return true;
-      } elseif ($playerY == $queenY){
+      }
+      elseif ($playerY == $queenY){
         return true;
-      } else {
+      }
+      elseif (abs($playerX-$queenX) == abs($playerY-$queenY)){
+        return true;
+      }
+      else {
         return false;
       }
     }
